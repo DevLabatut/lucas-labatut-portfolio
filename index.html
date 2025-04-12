@@ -405,7 +405,14 @@
               ></a>
             </div>
           </div>
-          <form id="contact-form" class="contact-form" netlify>
+          <form  
+            id="contact-form"
+            class="contact-form"
+            name="contact"
+            method="POST"
+            netlify
+            netlify-honeypot="bot-field"
+          >
             <div class="form-group">
               <label for="name" class="form-label" data-i18n="name">Nome</label>
               <input type="text" id="name" class="form-control" required />
