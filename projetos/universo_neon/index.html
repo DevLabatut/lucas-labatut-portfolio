@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universo Neon</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="ui-container">
+      <div id="header">
+        <h1 id="title">UNIVERSO NEON</h1>
+        <div id="language-selector">
+          <div class="lang-btn" data-lang="pt">PT</div>
+          <div class="lang-btn" data-lang="en">EN</div>
+          <div class="lang-btn" data-lang="zh">中文</div>
+        </div>
+      </div>
+      <div id="galaxy-info" class="hidden">
+        <h2 id="galaxy-name"></h2>
+        <div class="info-line"></div>
+        <p id="galaxy-type"></p>
+        <p id="galaxy-distance"></p>
+        <p id="galaxy-stars"></p>
+      </div>
+      <button id="fullscreen-btn">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABfUlEQVR4nO2ZQWrDMBBF/w1CbxUH2mRh40V64C56hmThGKe9QkKmGBQIJZZmpBnVLvqgRcAa/aeIkTQCioqKiuaqNwBnAMRoRwCVIPbG9SFGG5wXsQbmAPfWCWKfhLH7GAAyBOiEsW/WAAcAa0HsyvUhQVMDuAJ4h74aAJccABYQTcC8CsDlye9WwXw7EVsdoH4SOPWfaCZi7i0AoAzhMw8rAC2IkHlTgFQIjnkVgMetfszZUIDgmueMz9psOtfWwgzSJn7LHV9FU8aqBPPZ9Xs5fQJ4iVg2s4BYpPm7xrW6Wsqy8WlxM/9vzLeBZbOyTomWMz+a/zC8T2Qxb3WfSBIn21R/kZE2rnpw8pRMLI8SOwDfAL5iyyqhw1RMnpf06R++GSdRLN9xNiVVck+xZHUf0MjzHAiyANDcpEIQ6gAWO2ztgVAHWHxZhQzPNnWOwpb1wazOWVrM+T5AsQC3Gb0PUAxAP6P3gSEG4FUAYfk+cAawjQEoKioqgrl+AD0DWBWV3zfJAAAAAElFTkSuQmCC"
+          alt="fullscreen"
+        />
+      </button>
+    </div>
+    <div id="loading-screen">
+      <div class="neon-loader"></div>
+      <p id="loading-text">INICIALIZANDO...</p>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

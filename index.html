@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Futurista | Dev Labatut</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <span class="logo-icon"><i class="fas fa-code"></i></span>
+        <span>Labatut</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#home" class="active" data-i18n="home">Home</a>
+        <a href="#about" data-i18n="about">Sobre</a>
+        <a href="#skills" data-i18n="skills">Habilidades</a>
+        <a href="#projects" data-i18n="projects">Projetos</a>
+        <a href="#contact" data-i18n="contact">Contato</a>
+        <div class="language-switcher">
+          <button class="language-btn active" data-lang="pt">
+            <span class="flag-icon flag-icon-br"></span> PT
+          </button>
+          <button class="language-btn" data-lang="en">
+            <span class="flag-icon flag-icon-us"></span> EN
+          </button>
+          <button class="language-btn" data-lang="zh">
+            <span class="flag-icon flag-icon-cn"></span> 中文
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title" data-i18n="heroTitle">
+            Desenvolvedor Front-End
+          </h1>
+          <p class="hero-subtitle" data-i18n="heroSubtitle">
+            Especializado em criar experiências digitais incríveis com
+            tecnologias modernas e inovadoras.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary" data-i18n="viewProjects"
+              >Ver Projetos</a
+            >
+            <a href="#contact" class="btn btn-outline" data-i18n="contactMe"
+              >Contato</a
+            >
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="assets/img/wall-e.png"
+            alt="Wall-E Robot"
+            data-i18n="[alt]hero.image_alt"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="container">
+        <h2 data-i18n="aboutTitle">Sobre Mim</h2>
+        <div class="about-content">
+          <div
+            class="about-text"
+            style="
+              opacity: 1;
+              transform: translateY(0px);
+              transition: opacity 0.6s, transform 0.6s;
+            "
+          >
+            <p data-i18n="aboutText1">
+              Olá! Meu nome é Lucas Labatut e sou um desenvolvedor front-end
+              surdo em formação, apaixonado por tecnologia, acessibilidade e
+              inovação. Minha experiência me dá uma perspectiva única sobre
+              inclusão digital e interfaces verdadeiramente acessíveis.
+            </p>
+            <p data-i18n="aboutText2">
+              Gosto de transformar ideias em interfaces bonitas, acessíveis e
+              funcionais. Minhas habilidades incluem HTML, CSS, JavaScript e
+              design responsivo — sempre com foco em entregar a melhor
+              experiência para o usuário.
+            </p>
+            <p data-i18n="aboutText3">
+              Meu objetivo é atuar como desenvolvedor front-end, mas estou
+              aberto a oportunidades em qualquer área da tecnologia da
+              informação onde eu possa aprender e crescer.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <div class="stat-number">+1</div>
+                <div class="stat-label" data-i18n="yearsExp">
+                  Ano de Experiência Pessoal
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-label" data-i18n="projectsCompleted">
+                  Projetos Pessoais
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label" data-i18n="clientSatisfaction">
+                  Foco em Acessibilidade
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="assets/img/about.jpg" alt="Foto do desenvolvedor" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 data-i18n="skillsTitle">Minhas Habilidades</h2>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>
+              <i class="fas fa-laptop-code"></i>
+              <span data-i18n="frontend">Front-end</span>
+            </h3>
+            <div class="skills-list">
+              <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+              <span class="skill-tag"
+                ><i class="fab fa-css3-alt"></i> CSS3</span
+              >
+              <span class="skill-tag"
+                ><i class="fab fa-js"></i> JavaScript</span
+              >
+              <span class="skill-tag"><i class="fab fa-react"></i> React</span>
+              <span class="skill-tag"><i class="fab fa-vuejs"></i> Vue.js</span>
+              <span class="skill-tag"><i class="fab fa-sass"></i> Sass</span>
+              <span class="skill-tag"
+                ><i class="fab fa-bootstrap"></i> Bootstrap</span
+              >
+              <span class="skill-tag"
+                ><i class="fas fa-mobile-alt"></i> Responsive Design</span
+              >
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>
+              <i class="fas fa-server"></i>
+              <span data-i18n="backend">Back-end</span>
+            </h3>
+            <div class="skills-list">
+              <span class="skill-tag"
+                ><i class="fab fa-node-js"></i> Node.js</span
+              >
+              <span class="skill-tag"
+                ><i class="fas fa-database"></i> MongoDB</span
+              >
+              <span class="skill-tag"
+                ><i class="fas fa-database"></i> MySQL</span
+              >
+              <span class="skill-tag"
+                ><i class="fab fa-python"></i> Python</span
+              >
+              <span class="skill-tag"
+                ><i class="fas fa-fire"></i> Firebase</span
+              >
+              <span class="skill-tag"
+                ><i class="fas fa-code"></i> REST APIs</span
+              >
+              <span class="skill-tag"
+                ><i class="fas fa-shield-alt"></i> Authentication</span
+              >
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>
+              <i class="fas fa-tools"></i>
+              <span data-i18n="specialties">Especialidades</span>
+            </h3>
+            <div class="skills-list">
+              <span class="skill-tag"
+                ><i class="fas fa-rocket"></i> Performance</span
+              >
+              <span class="skill-tag"><i class="fas fa-search"></i> SEO</span>
+              <span class="skill-tag"
+                ><i class="fas fa-paint-brush"></i> UI/UX</span
+              >
+              <span class="skill-tag"
+                ><i class="fas fa-mobile-alt"></i> PWA</span
+              >
+              <span class="skill-tag"><i class="fas fa-cloud"></i> Cloud</span>
+              <span class="skill-tag"
+                ><i class="fas fa-code-branch"></i> Git</span
+              >
+              <span class="skill-tag"><i class="fas fa-terminal"></i> CLI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 data-i18n="projectsTitle">Projetos Recentes</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/img/explosivas.jpeg" alt="Bolinhas Explosivas" />
+              <div class="project-badges">
+                <span class="project-badge badge-featured">Destaque</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">BOLINHAS EXPLOSIVAS</h3>
+              <p class="project-description" data-i18n="interactiveEffectDesc">
+                Um espetáculo interativo de bolinhas coloridas que seguem o
+                cursor e explodem ao clique.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="projetos/bolinhas_explosivas/index.html"
+                  class="btn btn-outline"
+                  data-i18n="demo"
+                  >Demo</a
+                >
+                <a
+                  href="#"
+                  style="pointer-events: none"
+                  class="btn btn-primary"
+                  data-i18n="code"
+                  >Código</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-project="neon">
+            <div class="project-image">
+              <img src="assets/img/universo_neon.jpeg" alt="Universo Neon" />
+              <div class="project-badges">
+                <span class="project-badge badge-featured">Destaque</span>
+                <span class="project-badge badge-opensource">Open Source</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">UNIVERSO NEON</h3>
+              <p class="project-description" data-i18n="universeDesc">
+                Simulação 3D interativa de galáxias com efeitos visuais neon,
+                utilizando Three.js. Explore dados astronômicos em tempo real
+                com suporte trilingue (PT/EN/中文).
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Three.js</span>
+                <span class="tech-tag">WebGL</span>
+                <span class="tech-tag">JavaScript ES6</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">i18n</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="projetos/universo_neon/index.html"
+                  class="btn btn-outline"
+                  data-i18n="demo"
+                  >Demo</a
+                >
+                <a
+                  href="#"
+                  style="pointer-events: none"
+                  class="btn btn-primary"
+                  data-i18n="code"
+                  >Código</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/img/walle.jpeg" alt="WALL-E Digital Solutions" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">WALL-E Digital Solutions</h3>
+              <p class="project-description" data-i18n="walleDesc">
+                Plataforma web moderna com sistema de temas personalizável,
+                suporte multilíngue (PT/EN/ZH) e interface adaptável para todos
+                os dispositivos.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript ES6</span>
+                <span class="tech-tag">Responsive Design</span>
+                <span class="tech-tag">i18n</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="projetos/walle-e/index.html"
+                  class="btn btn-outline"
+                  data-i18n="demo"
+                  >Demo</a
+                >
+                <a
+                  href="#"
+                  style="pointer-events: none"
+                  class="btn btn-primary"
+                  data-i18n="code"
+                  >Código</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 data-i18n="contactTitle">Entre em Contato</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h3 data-i18n="email">Email</h3>
+                <p>lucas.labatut.sw@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3 data-i18n="phone">Telefone</h3>
+                <p>+55 (51) 99301-8278</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3 data-i18n="location">Localização</h3>
+                <p>Rio Grande do Sul, Brasil</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  style="fill: #00f0ff"
+                >
+                  <path
+                    d="M21.502 19.525c1.524-1.105 2.498-2.738 2.498-4.554 0-3.326-3.237-6.023-7.229-6.023s-7.229 2.697-7.229 6.023c0 3.327 3.237 6.024 7.229 6.024.825 0 1.621-.117 2.36-.33l.212-.032c.139 0 .265.043.384.111l1.583.914.139.045c.133 0 .241-.108.241-.241l-.039-.176-.326-1.215-.025-.154c0-.162.08-.305.202-.392zm-12.827-17.228c-4.791 0-8.675 3.236-8.675 7.229 0 2.178 1.168 4.139 2.997 5.464.147.104.243.276.243.471l-.03.184-.391 1.458-.047.211c0 .16.13.29.289.29l.168-.054 1.899-1.097c.142-.082.293-.133.46-.133l.255.038c.886.255 1.842.397 2.832.397l.476-.012c-.188-.564-.291-1.158-.291-1.771 0-3.641 3.542-6.593 7.911-6.593l.471.012c-.653-3.453-4.24-6.094-8.567-6.094zm5.686 11.711c-.532 0-.963-.432-.963-.964 0-.533.431-.964.963-.964.533 0 .964.431.964.964 0 .532-.431.964-.964.964zm4.82 0c-.533 0-.964-.432-.964-.964 0-.533.431-.964.964-.964.532 0 .963.431.963.964 0 .532-.431.964-.963.964zm-13.398-5.639c-.639 0-1.156-.518-1.156-1.156 0-.639.517-1.157 1.156-1.157.639 0 1.157.518 1.157 1.157 0 .638-.518 1.156-1.157 1.156zm5.783 0c-.639 0-1.156-.518-1.156-1.156 0-.639.517-1.157 1.156-1.157.639 0 1.157.518 1.157 1.157 0 .638-.518 1.156-1.157 1.156z"
+                  />
+                </svg>
+              </div>
+              <div class="contact-text">
+                <h3 data-i18n="webchat">WeChat</h3>
+                <p>Labatut</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                target="_blank"
+                href="https://github.com/DevLabatut"
+                class="social-link"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/lucas-labatut-pcd-839824282/"
+                class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/labatut20_/"
+                class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <form id="contact-form" class="contact-form" netlify>
+            <div class="form-group">
+              <label for="name" class="form-label" data-i18n="name">Nome</label>
+              <input type="text" id="name" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label" data-i18n="email"
+                >Email</label
+              >
+              <input type="email" id="email" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label" data-i18n="subject"
+                >Assunto</label
+              >
+              <input type="text" id="subject" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label" data-i18n="message"
+                >Mensagem</label
+              >
+              <textarea
+                style="resize: none"
+                id="message"
+                class="form-control"
+                required
+                data-i18n="[placeholder]message"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-i18n="sendMessage"
+            >
+              Enviar Mensagem
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <div class="footer-logo">
+              <span class="logo-icon"><i class="fas fa-code"></i></span>
+              <span>Labatut</span>
+            </div>
+            <p data-i18n="aboutText1">
+              Olá! Meu nome é Lucas Labatut e sou um desenvolvedor full stack
+              apaixonado por tecnologia e inovação. Com mais de 5 anos de
+              experiência, ajudo empresas e startups a transformar suas ideias
+              em realidade digital.
+            </p>
+            <div class="social-links">
+              <a
+                target="_blank"
+                href="https://github.com/DevLabatut"
+                class="social-link"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/lucas-labatut-pcd-839824282/"
+                class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/labatut20_/"
+                class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h3 data-i18n="quickLinks">Links Rápidos</h3>
+            <ul>
+              <li><a href="#home" data-i18n="home">Home</a></li>
+              <li><a href="#about" data-i18n="about">Sobre</a></li>
+              <li><a href="#skills" data-i18n="skills">Habilidades</a></li>
+              <li><a href="#projects" data-i18n="projects">Projetos</a></li>
+              <li><a href="#contact" data-i18n="contact">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3 data-i18n="services">Serviços</h3>
+            <ul>
+              <li>
+                <p style="margin-bottom: 0.8rem" data-i18n="webDevelopment">
+                  Desenvolvimento Web
+                </p>
+              </li>
+              <li>
+                <p style="margin-bottom: 0.8rem" data-i18n="mobileApps">
+                  Aplicativos Mobile
+                </p>
+              </li>
+              <li>
+                <p style="margin-bottom: 0.8rem" data-i18n="uiuxDesign">
+                  UI/UX Design
+                </p>
+              </li>
+              <li>
+                <p style="margin-bottom: 0.8rem" data-i18n="consulting">
+                  Consultoria
+                </p>
+              </li>
+              <li>
+                <p style="margin-bottom: 0.8rem" data-i18n="maintenance">
+                  Manutenção
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p data-i18n="newsletterText">
+              Assine para receber atualizações e novidades.
+            </p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                class="newsletter-input"
+                required
+                data-i18n="[placeholder]newsletterPlaceholder"
+              />
+              <button type="submit" class="newsletter-btn">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p data-i18n="copyright">
+            © 2025 Labatut. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="back-to-top" id="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <div class="modal" id="confirmation-modal">
+      <div class="modal-content">
+        <button class="modal-close" id="modal-close">&times;</button>
+        <div class="modal-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h2 data-i18n="confirmationTitle">Mensagem Enviada!</h2>
+        <p data-i18n="confirmationText">
+          Sua mensagem foi recebida com sucesso. Entrarei em contato em breve.
+        </p>
+        <button class="btn btn-primary" id="modal-ok">OK</button>
+      </div>
+    </div>
+    <div id="particles-js"></div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </body>
+</html>
