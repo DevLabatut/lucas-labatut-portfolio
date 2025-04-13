@@ -366,8 +366,7 @@ section {
 .about-image {
   position: relative;
   border-radius: var(--border-radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(0, 240, 255, 0.1);
 }
 
 .about-image img {
@@ -375,16 +374,6 @@ section {
   height: auto;
   display: block;
   border-radius: var(--border-radius-lg);
-}
-
-.about-image::before {
-  content: "";
-  position: absolute;
-  inset: -5px;
-  background: var(--gradient-primary);
-  z-index: -1;
-  border-radius: var(--border-radius-lg);
-  animation: rotate 6s linear infinite;
 }
 
 @keyframes rotate {
